@@ -3,6 +3,11 @@
     ViewBag.Title = "SignIn";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+<div>
+    @{
+        Html.RenderPartial("_VisitorTopMenu");
+    }
+</div>
 
 <div class="not-authenticate">
     <div class="container">

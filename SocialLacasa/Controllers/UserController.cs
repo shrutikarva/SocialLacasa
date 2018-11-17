@@ -51,5 +51,13 @@ namespace SocialLacasa.Controllers
             ViewBag.UserId = UserId;
             return View();
         }
+        public ActionResult Terms()
+        {
+            return View();
+        }
+        public ActionResult Services()
+        {
+            return View();
+        }
     }
 }
