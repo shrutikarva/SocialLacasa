@@ -138,3 +138,4 @@ C:\Users\Shruti\Documents\work\Bhakti\SocialLacasa\SocialLacasa\obj\Release\Soci
 C:\Users\Shruti\Documents\work\Bhakti\SocialLacasa\SocialLacasa\obj\Release\SocialLacasa.csproj.CopyComplete
 C:\Users\Shruti\Documents\work\Bhakti\SocialLacasa\SocialLacasa\obj\Release\SocialLacasa.dll
 C:\Users\Shruti\Documents\work\Bhakti\SocialLacasa\SocialLacasa\obj\Release\SocialLacasa.pdb
+C:\Users\Shruti\Documents\work\Bhakti\SocialLacasa\SocialLacasa\obj\Release\SocialLacasa.csprojAssemblyReference.cache

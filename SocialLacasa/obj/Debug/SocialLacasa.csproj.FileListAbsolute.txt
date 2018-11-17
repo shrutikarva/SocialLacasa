@@ -135,8 +135,8 @@ C:\Users\Shruti\Documents\work\Bhakti\SocialLacasa\SocialLacasa\bin\Microsoft.AI
 C:\Users\Shruti\Documents\work\Bhakti\SocialLacasa\SocialLacasa\bin\Microsoft.AI.WindowsServer.xml
 C:\Users\Shruti\Documents\work\Bhakti\SocialLacasa\SocialLacasa\bin\Microsoft.AI.Web.xml
 C:\Users\Shruti\Documents\work\Bhakti\SocialLacasa\SocialLacasa\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Shruti\Documents\work\Bhakti\SocialLacasa\SocialLacasa\obj\Debug\SocialLacasa.csprojAssemblyReference.cache
 C:\Users\Shruti\Documents\work\Bhakti\SocialLacasa\SocialLacasa\obj\Debug\SocialLacasa.csproj.CoreCompileInputs.cache
 C:\Users\Shruti\Documents\work\Bhakti\SocialLacasa\SocialLacasa\obj\Debug\SocialLacasa.csproj.CopyComplete
 C:\Users\Shruti\Documents\work\Bhakti\SocialLacasa\SocialLacasa\obj\Debug\SocialLacasa.dll
 C:\Users\Shruti\Documents\work\Bhakti\SocialLacasa\SocialLacasa\obj\Debug\SocialLacasa.pdb
-C:\Users\Shruti\Documents\work\Bhakti\SocialLacasa\SocialLacasa\obj\Debug\SocialLacasa.csprojAssemblyReference.cache
