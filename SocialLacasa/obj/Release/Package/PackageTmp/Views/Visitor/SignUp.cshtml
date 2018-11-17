@@ -3,6 +3,11 @@
     ViewBag.Title = "SignUp";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+<div>
+    @{
+        Html.RenderPartial("_VisitorTopMenu");
+    }
+</div>
 
 <div class="not-authenticate">
     <div class="container">
@@ -26,8 +31,8 @@
                             <label for="confirm" class="control-label">Confirm password</label>
                             <input type="password" class="form-control" id="txtconfirm" name="RegistrationForm[password_again]">
                         </div>
-                        <div class="g-recaptcha form-group" data-sitekey="6LeQyxkUAAAAACZsRNUpGI-5rw7ifdLgP0mUyE4O">
-                        </div>
+                        <!--   <div class="g-recaptcha form-group" data-sitekey="6LeQyxkUAAAAACZsRNUpGI-5rw7ifdLgP0mUyE4O">
+       </div>-->
                         <div class="form-group">
                             <div class="checkbox">
                                 <label>
@@ -35,7 +40,7 @@
                                 </label>
                             </div>
                         </div>
-                        <input type="button" onclick="SaveUser();" class="btn btn-primary" value="Sign Up"/>
+                        <input type="button" onclick="SaveUser();" class="btn btn-primary" value="Sign Up" />
                         @*<button type="submit" onclick="SaveUser();" class="btn btn-primary">Sign up</button>*@
                         <span class="pull-right pull-right-middle">Already have an account? <a href="~/Visitor/SignIn">Sign in</a></span>
                     </form>
@@ -44,7 +49,7 @@
         </div>
     </div>
 
-    <script src='https://www.google.com/recaptcha/api.js?hl=en'></script>
+    <!--  <script src='https://www.google.com/recaptcha/api.js?hl=en'></script>-->
 
 </div>
 @section Scripts

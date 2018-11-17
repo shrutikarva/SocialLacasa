@@ -1,5 +1,4 @@
 ﻿var SaveUser = function () {
-    alert(1);
     var serviceURL = '/Service/SaveUser';
    
     var obj = {};
@@ -7,7 +6,7 @@
     obj.userName = $("#txtusername").val();
     obj.password = $("#txtpassword").val(); 
     obj.email = $("#txtemail").val(); 
-    if (isChecked==false) {
+    if (isChecked==true) {
         $.ajax({
             type: "POST",
             url: serviceURL,
@@ -21,6 +20,7 @@
         function successFunc(data, status) {
 
             alert("User Saved.");
+            window.location = '/';
         }
 
         function errorFunc(err) {
@@ -28,7 +28,7 @@
         }
     }
     else {
-        alert("Please confirm that you are not a robot!")
+        alert("Please accept the terms and conditions!")
     }
 
 }

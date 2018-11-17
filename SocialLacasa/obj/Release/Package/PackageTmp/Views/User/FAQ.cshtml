@@ -2,7 +2,18 @@
 @{
     ViewBag.Title = "FAQ";
     Layout = "~/Views/Shared/_Layout.cshtml";
+
 }
+<div>
+    @{
+        Html.RenderPartial("_UserTopMenu");
+    }
+</div>
+<div>
+    @{
+        Html.RenderPartial("_sidenav");
+    }
+</div>
 
 <div class="content-wrapper">
     <section class="vc_rows page-new-order logged-in wpb_row vc_rows-fluid vc_custom_1529361472908 vc_row-has-fill vc-row-full-width" style="background-size: 100% 115px;">
