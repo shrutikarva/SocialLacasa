@@ -14,11 +14,11 @@
 
                         <div class="form-group">
                             <label for="username" class="control-label">Username</label>
-                            <input type="text" class="form-control" id="username" name="LoginForm[username]">
+                            <input type="text" class="form-control" id="txtusername" name="LoginForm[username]">
                         </div>
                         <div class="form-group">
                             <label for="password" class="control-label">Password</label>
-                            <input type="password" class="form-control" id="password" name="LoginForm[password]">
+                            <input type="password" class="form-control" id="txtpassword" name="LoginForm[password]">
                         </div>
                         <div class="checkbox">
                             <label>
@@ -28,9 +28,9 @@
 
 
                         <input type="hidden" name="_csrf" value="Oi06lb-nIJ_HW6kVGNUiZZNH4HWJ8qZHx9Nu3gq6iVRNaA-45cNT5qgP4yIt-Elc4nDSPfmZ_nWQhgHzXszgHA==">
-                        <button type="submit" class="btn btn-primary">Sign in</button>
-
-                        <span class="pull-right pull-right-middle">Do not have an account? <a href="/signup">Sign up</a></span>
+                        @*<button type="submit" class="btn btn-primary">Sign in</button>*@
+                        <input type="button" class="btn btn-primary" value="Sign in" onclick="LoginUser();"/>
+                        <span class="pull-right pull-right-middle">Do not have an account? <a href="/Visitor/SignUp">Sign up</a></span>
                     </form>
                 </div>
             </div>
@@ -59,3 +59,8 @@
 
 </div>
 
+@section Scripts
+{
+
+    <script src="@Url.Content("~/Custom/JS/SignIn.js")"></script>
+}

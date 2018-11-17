@@ -148,11 +148,14 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ServiceController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Controllers\VisitorController.cs" />
+    <Compile Include="DataLayer\User.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Orders.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -161,6 +164,9 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Custom\CSS\style.css" />
+    <Content Include="Custom\JS\Neworder.js" />
+    <Content Include="Custom\JS\SignIn.js" />
+    <Content Include="Custom\JS\Signup.js" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -170,6 +176,8 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Properties\PublishProfiles\sociallacasa - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\sociallacasa - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -203,16 +211,16 @@
     <Content Include="Views\Shared\_VisitorTopMenu.cshtml" />
     <Content Include="Views\Shared\_UserTopMenu.cshtml" />
     <Content Include="Views\User\NewOrder.cshtml" />
-    <Content Include="Views\User\MassOrder.cshtml" />
     <Content Include="Views\User\Orders.cshtml" />
     <Content Include="Views\User\Subscriptions.cshtml" />
     <Content Include="Views\User\AddFunds.cshtml" />
     <Content Include="Views\User\FAQ.cshtml" />
     <Content Include="Views\User\Account.cshtml" />
+    <Content Include="Views\User\MassOrders.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
+    <Folder Include="Views\Service\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

@@ -1,5 +1,7 @@
-﻿using System;
+﻿using SocialLacasa.DataLayer;
+using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -21,9 +23,15 @@ namespace SocialLacasa.Controllers
         {
             return View();
         }
-        public ActionResult Orders()
+        public ActionResult Orders(string status="")
         {
-            return View();
+            DataTable dtorders = new DataTable();
+
+            var objUser = new User();
+            dtorders = objUser.Getorders(Session["UserId"].ToString(), status);
+            DataSet ds = new DataSet();
+            ds.Tables.Add(dtorders);
+            return View(ds);
         }
         public ActionResult MassOrders()
         {
@@ -37,8 +45,10 @@ namespace SocialLacasa.Controllers
         {
             return View();
         }
-        public ActionResult NewOrder()
+        public ActionResult NewOrder(string UserId)
         {
+            Session["UserId"] = UserId;
+            ViewBag.UserId = UserId;
             return View();
         }
     }
