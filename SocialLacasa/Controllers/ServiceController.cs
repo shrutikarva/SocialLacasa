@@ -15,14 +15,14 @@ namespace SocialLacasa.Controllers
             return View();
         }
 
-        public JsonResult SaveNewOrder(string category, string service, string link, string quantity, decimal charge, string userId)
+        public JsonResult SaveNewOrder(string category, string service, string link, string quantity, decimal charge)
         {
             var objUser = new User();
             string issucess = "0";
             List<string> Result = new List<string>();
             try
             {
-                objUser.SaveNewOrder(category, service, link, quantity, charge, userId);
+                objUser.SaveNewOrder(category, service, link, quantity, charge, Session["UserId"].ToString());
                 issucess = "1";
             }
             catch (Exception ex)
@@ -60,7 +60,7 @@ namespace SocialLacasa.Controllers
             try
             {
                 isExist=objUser.CheckUser(userName, password);
-                
+                Session["UserId"] = isExist;
             }
             catch (Exception ex)
             {

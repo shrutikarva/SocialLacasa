@@ -45,10 +45,17 @@ namespace SocialLacasa.Controllers
         {
             return View();
         }
-        public ActionResult NewOrder(string UserId)
+        public ActionResult NewOrder()
         {
-            Session["UserId"] = UserId;
-            ViewBag.UserId = UserId;
+            var objUser = new User();
+            DataTable dtCategory = objUser.GetAllCategory();
+            DataRow newRow = dtCategory.NewRow();
+            newRow[0] = "0";
+            newRow[1] = "Select";
+            dtCategory.Rows.InsertAt(newRow, 0);
+            ViewBag.Category = new SelectList(dtCategory.AsDataView(), "CatagoryId", "CatagoryName");//dtMessages.AsEnumerable().ToList();
+
+            //ViewBag.UserId = Session["UserId"];
             return View();
         }
         public ActionResult Terms()

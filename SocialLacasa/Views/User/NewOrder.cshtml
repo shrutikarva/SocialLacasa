@@ -15,7 +15,7 @@
 </div>
 
 <div class="container">
-    <input type="hidden" value="@ViewBag.UserId" id="hdnUserId" />
+    <input type="hidden" value='@Session["UserId"]' id="hdnUserId" />
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div style="height:12px;"></div>
@@ -35,7 +35,8 @@
 
                     <div class="form-group">
                         <label for="orderform-category" class="control-label">Category</label>
-                        <select class="form-control" id="orderform-category" name="OrderForm[category]">
+                        @Html.DropDownList("orderform-category", (SelectList)ViewBag.Category, new { @class = " form-control", onchange = "ShowService(this)" })
+                        @*<select class="form-control" id="orderform-category" name="OrderForm[category]">
                             <option value="64" selected="">✌  Wizards ✌</option>
                             <option value="17">Facebook - Page Likes</option>
                             <option value="48">Facebook - Country Targeted Page Likes</option>
@@ -89,7 +90,7 @@
                             <option value="62">Twitch Video(VOD) Views</option>
                             <option value="63">Twitch Channel Total Views</option>
                             <option value="40">Website Traffic</option>
-                        </select>
+                        </select>*@
                     </div>
                     <div class="form-group">
                         <label for="service" class="control-label">Service (Price / 1000)</label>

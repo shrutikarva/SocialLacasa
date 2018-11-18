@@ -20,16 +20,7 @@ namespace SocialLacasa.Controllers
         [HttpGet]
         public ActionResult SignUp()
         {
-            //String strConnString = ConfigurationManager.ConnectionStrings["DBSocialLacasa"].ConnectionString;
-            //SqlConnection nwindConn = new SqlConnection(strConnString);
-            //SqlCommand selectCMD = new SqlCommand("SELECT * from UserDetails", nwindConn);
-            //selectCMD.CommandTimeout = 30;
-            //SqlDataAdapter customerDA = new SqlDataAdapter();
-            //customerDA.SelectCommand = selectCMD;
-            //nwindConn.Open();
-            //DataSet customerDS = new DataSet();
-            //customerDA.Fill(customerDS, "Customers");
-            //nwindConn.Close();
+            
             return View();
         }
         public ActionResult Terms()
@@ -39,6 +30,7 @@ namespace SocialLacasa.Controllers
         
         public ActionResult SignIn()
         {
+            Session["UserId"] = null;
             return View();
         }
        

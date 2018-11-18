@@ -8,7 +8,7 @@
     obj.link = $("#field-orderform-fields-link").val();
     obj.quantity = $("#field-orderform-fields-quantity").val();
     obj.charge = $("#charge").val();
-    obj.userId = $("#hdnUserId").val();
+   // obj.userId = $("#hdnUserId").val();
    
         $.ajax({
             type: "POST",

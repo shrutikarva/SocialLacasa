@@ -26,6 +26,7 @@ namespace SocialLacasa.DataLayer
                 cn.Open();
                 object o = cmd.ExecuteScalar();
                 isExist = o.ToString();
+
                 cn.Close();
 
             }
@@ -88,6 +89,39 @@ namespace SocialLacasa.DataLayer
             {
 
             }
+        }
+
+        public DataTable GetAllCategory()
+        {
+
+            DataTable dtCategory = new DataTable();
+            SqlConnection con = new SqlConnection(strConnString);
+            SqlCommand cmd = new SqlCommand();
+            SqlDataReader reader;
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.CommandText = "usp_GetAllCategory";
+
+
+            cmd.Connection = con;
+            try
+            {
+                con.Open();
+
+                reader = cmd.ExecuteReader();
+
+                dtCategory.Load(reader);
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                con.Close();
+                con.Dispose();
+            }
+            return dtCategory;
         }
         public void SaveNewOrder(string category, string service, string link, string quantity, decimal charge, string userId)
         {
