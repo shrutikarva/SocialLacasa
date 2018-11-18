@@ -3,7 +3,7 @@
     var serviceURL = '/Service/SaveNewOrder';
 
     var obj = {};
-    obj.category = $("#orderform-category").val();
+    obj.category = $("#CatagoryName").val();
     obj.service = $("#orderform-service").val();
     obj.link = $("#field-orderform-fields-link").val();
     obj.quantity = $("#field-orderform-fields-quantity").val();

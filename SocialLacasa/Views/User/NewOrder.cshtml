@@ -35,62 +35,63 @@
 
                     <div class="form-group">
                         <label for="orderform-category" class="control-label">Category</label>
-                        @Html.DropDownList("orderform-category", (SelectList)ViewBag.Category, new { @class = " form-control", onchange = "ShowService(this)" })
+                        @Html.DropDownList("CatagoryName", (SelectList)ViewBag.CatagoryName)
+
                         @*<select class="form-control" id="orderform-category" name="OrderForm[category]">
-                            <option value="64" selected="">✌  Wizards ✌</option>
-                            <option value="17">Facebook - Page Likes</option>
-                            <option value="48">Facebook - Country Targeted Page Likes</option>
-                            <option value="16">Facebook - Post Likes</option>
-                            <option value="19">Facebook Auto Likes - 30 Day Membership</option>
-                            <option value="15">Facebook - Views &amp; Live Stream Views</option>
-                            <option value="55">Facebook - Events</option>
-                            <option value="14">Facebook - Other Services</option>
-                            <option value="1">Instagram Followers - Guaranteed</option>
-                            <option value="2">Instagram Followers - No Refill</option>
-                            <option value="3">Instagram Followers - Country Targeted</option>
-                            <option value="52">Instagram Followers - Per Minute</option>
-                            <option value="4">Instagram Likes</option>
-                            <option value="5">Instagram Likes - Country Targeted</option>
-                            <option value="41">Instagram Likes - Per Minute</option>
-                            <option value="6">Instagram Views</option>
-                            <option value="43">Instagram Views - Country Targeted</option>
-                            <option value="7">Instagram Comments</option>
-                            <option value="8">Instagram  Live</option>
-                            <option value="44">Instagram TV</option>
-                            <option value="38">Instagram Mentions</option>
-                            <option value="9">Instagram - Auto Likes | Views | Comments</option>
-                            <option value="42">Instagram Auto Likes - Per Minute</option>
-                            <option value="10">♛ Instagram Auto Likes + Views - 7 Day Membership</option>
-                            <option value="35">♛ Instagram Auto Likes + Views - 30 Day Membership</option>
-                            <option value="21">Instagram Auto Views - 7 Day Membership</option>
-                            <option value="20">Instagram Auto Views - 30 Day Membership</option>
-                            <option value="53">Arabic Instagram Services / خدمات عربية</option>
-                            <option value="45">Twitter Followers</option>
-                            <option value="18">Twitter - Other Services</option>
-                            <option value="12">Youtube Views</option>
-                            <option value="60">YouTube Views - Country Targeted</option>
-                            <option value="11">Youtube - Shares</option>
-                            <option value="58">YouTube Comments</option>
-                            <option value="57">YouTube - Other Services</option>
-                            <option value="23">Soundcloud</option>
-                            <option value="26">Google Plus</option>
-                            <option value="33">Linkedin</option>
-                            <option value="36">Mixcloud</option>
-                            <option value="24">IMDB</option>
-                            <option value="29">Periscope</option>
-                            <option value="25">Pinterest</option>
-                            <option value="37">Radiojavan</option>
-                            <option value="49">Reddit</option>
-                            <option value="27">Spotify</option>
-                            <option value="31">Telegram</option>
-                            <option value="50">Tik Tok</option>
-                            <option value="47">Twitch</option>
-                            <option value="30">Tumblr</option>
-                            <option value="61">Twitch Clip Views</option>
-                            <option value="62">Twitch Video(VOD) Views</option>
-                            <option value="63">Twitch Channel Total Views</option>
-                            <option value="40">Website Traffic</option>
-                        </select>*@
+            <option value="64" selected="">✌  Wizards ✌</option>
+            <option value="17">Facebook - Page Likes</option>
+            <option value="48">Facebook - Country Targeted Page Likes</option>
+            <option value="16">Facebook - Post Likes</option>
+            <option value="19">Facebook Auto Likes - 30 Day Membership</option>
+            <option value="15">Facebook - Views &amp; Live Stream Views</option>
+            <option value="55">Facebook - Events</option>
+            <option value="14">Facebook - Other Services</option>
+            <option value="1">Instagram Followers - Guaranteed</option>
+            <option value="2">Instagram Followers - No Refill</option>
+            <option value="3">Instagram Followers - Country Targeted</option>
+            <option value="52">Instagram Followers - Per Minute</option>
+            <option value="4">Instagram Likes</option>
+            <option value="5">Instagram Likes - Country Targeted</option>
+            <option value="41">Instagram Likes - Per Minute</option>
+            <option value="6">Instagram Views</option>
+            <option value="43">Instagram Views - Country Targeted</option>
+            <option value="7">Instagram Comments</option>
+            <option value="8">Instagram  Live</option>
+            <option value="44">Instagram TV</option>
+            <option value="38">Instagram Mentions</option>
+            <option value="9">Instagram - Auto Likes | Views | Comments</option>
+            <option value="42">Instagram Auto Likes - Per Minute</option>
+            <option value="10">♛ Instagram Auto Likes + Views - 7 Day Membership</option>
+            <option value="35">♛ Instagram Auto Likes + Views - 30 Day Membership</option>
+            <option value="21">Instagram Auto Views - 7 Day Membership</option>
+            <option value="20">Instagram Auto Views - 30 Day Membership</option>
+            <option value="53">Arabic Instagram Services / خدمات عربية</option>
+            <option value="45">Twitter Followers</option>
+            <option value="18">Twitter - Other Services</option>
+            <option value="12">Youtube Views</option>
+            <option value="60">YouTube Views - Country Targeted</option>
+            <option value="11">Youtube - Shares</option>
+            <option value="58">YouTube Comments</option>
+            <option value="57">YouTube - Other Services</option>
+            <option value="23">Soundcloud</option>
+            <option value="26">Google Plus</option>
+            <option value="33">Linkedin</option>
+            <option value="36">Mixcloud</option>
+            <option value="24">IMDB</option>
+            <option value="29">Periscope</option>
+            <option value="25">Pinterest</option>
+            <option value="37">Radiojavan</option>
+            <option value="49">Reddit</option>
+            <option value="27">Spotify</option>
+            <option value="31">Telegram</option>
+            <option value="50">Tik Tok</option>
+            <option value="47">Twitch</option>
+            <option value="30">Tumblr</option>
+            <option value="61">Twitch Clip Views</option>
+            <option value="62">Twitch Video(VOD) Views</option>
+            <option value="63">Twitch Channel Total Views</option>
+            <option value="40">Website Traffic</option>
+        </select>*@
                     </div>
                     <div class="form-group">
                         <label for="service" class="control-label">Service (Price / 1000)</label>

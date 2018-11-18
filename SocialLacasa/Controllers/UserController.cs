@@ -53,7 +53,7 @@ namespace SocialLacasa.Controllers
             newRow[0] = "0";
             newRow[1] = "Select";
             dtCategory.Rows.InsertAt(newRow, 0);
-            ViewBag.Category = new SelectList(dtCategory.AsDataView(), "CatagoryId", "CatagoryName");//dtMessages.AsEnumerable().ToList();
+            ViewBag.CatagoryName = new SelectList(dtCategory.AsDataView(), "CatagoryId", "CatagoryName");//dtMessages.AsEnumerable().ToList();
 
             //ViewBag.UserId = Session["UserId"];
             return View();
